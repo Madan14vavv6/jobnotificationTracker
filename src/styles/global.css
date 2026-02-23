@@ -2,7 +2,7 @@
   color-scheme: light;
 
   /* Color tokens */
-  --color-bg-app: #f9fafb;
+  --color-bg-app: #f7f6f3;
   --color-bg-surface: #ffffff;
   --color-bg-elevated: #ffffff;
   --color-bg-subtle: #f3f4f6;
@@ -17,8 +17,11 @@
   --color-text-muted: #6b7280;
   --color-text-on-accent: #ffffff;
 
-  --color-accent-primary: #4e5ee8;
-  --color-accent-primary-soft: #eef4ff;
+  --color-accent-primary: #8b0000;
+  --color-accent-primary-soft: #fbecec;
+
+  /* Route shell specifics */
+  --color-nav-underline-active: #8b0000;
 
   --color-status-success-bg: #ecfdf3;
   --color-status-success-border: #dcfce7;
@@ -31,8 +34,8 @@
   --color-status-danger-text: #b91c1c;
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', system-ui, -system-ui,
-    sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, system-ui, -system-ui, sans-serif;
+  --font-serif: 'Georgia', 'Times New Roman', serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
 

@@ -1,0 +1,25 @@
+.page-scaffold {
+  display: flex;
+  justify-content: center;
+}
+
+.page-scaffold__inner {
+  max-width: 720px;
+  padding-block: var(--space-3xl);
+}
+
+.page-scaffold__title {
+  margin: 0 0 var(--space-md);
+  font-family: var(--font-serif);
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.page-scaffold__subtitle {
+  margin: 0;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text-muted);
+}
+
