@@ -1,0 +1,84 @@
+.top-bar {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: var(--space-xl);
+  gap: var(--space-xl);
+}
+
+.top-bar__section {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.top-bar__section--center {
+  flex: 1;
+  justify-content: center;
+}
+
+.top-bar__section--right {
+  justify-content: flex-end;
+}
+
+.top-bar__brand-mark {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: var(--color-accent-primary-soft);
+  border: 1px solid var(--color-accent-primary);
+}
+
+.top-bar__brand-name {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.top-bar__page-label {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.top-bar__quiet-action {
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  padding-inline: var(--space-md);
+  padding-block: 6px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  background-color: transparent;
+}
+
+.top-bar__quiet-action:hover {
+  border-color: var(--color-border-subtle);
+  background-color: var(--color-bg-subtle);
+}
+
+.top-bar__quiet-action:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.top-bar__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-subtle);
+}
+
+@media (max-width: 639px) {
+  .top-bar {
+    padding-inline: var(--space-lg);
+    gap: var(--space-lg);
+  }
+
+  .top-bar__section--center {
+    display: none;
+  }
+}
+

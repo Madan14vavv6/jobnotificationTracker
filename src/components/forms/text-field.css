@@ -1,0 +1,89 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.field__label {
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.field__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-subtle);
+  background-color: var(--color-bg-surface);
+  padding-inline: var(--space-md);
+  padding-block: 8px;
+}
+
+.field__control--with-start {
+  padding-left: var(--space-sm);
+}
+
+.field__control--with-end {
+  padding-right: var(--space-sm);
+}
+
+.field__control--error {
+  border-color: var(--color-border-danger);
+  background-color: var(--color-status-danger-bg);
+}
+
+.field__input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+}
+
+.field__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.field__input:focus-visible {
+  outline: none;
+}
+
+.field__control:focus-within {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 1px var(--color-border-focus);
+}
+
+.field__adornment {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text-muted);
+}
+
+.field__adornment--start {
+  margin-right: var(--space-xs);
+}
+
+.field__adornment--end {
+  margin-left: var(--space-xs);
+}
+
+.field__hint {
+  margin: 0;
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height-body-sm);
+  color: var(--color-text-muted);
+}
+
+.field__error {
+  margin: 0;
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height-body-sm);
+  color: var(--color-status-danger-text);
+}
+

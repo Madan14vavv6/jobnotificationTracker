@@ -1,0 +1,10 @@
+.skeleton {
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-subtle);
+}
+
+.skeleton--text {
+  height: 12px;
+  width: 100%;
+}
+
